@@ -146,7 +146,7 @@ function App() {
       <header className="relative h-[80vh] md:h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="assets/hero-bg.png"
+            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fisyaderm.com%2Fguide-to-laser-hair-removal-in-delhi%2F&psig=AOvVaw1QRNEQcr0OPY2nExNeIns7&ust=1738415595054000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOiKhvSEoIsDFQAAAAAdAAAAABAD"
             alt="Spa background"
             className="w-full h-full object-cover"
           />
