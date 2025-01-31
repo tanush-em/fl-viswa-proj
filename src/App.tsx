@@ -149,7 +149,7 @@ function App() {
       <header className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&q=80"
+            src="assets/hero-bg.webp"
             alt="Spa background"
             className="w-full h-full object-cover"
           />
@@ -190,21 +190,14 @@ function App() {
             <UserCircle className="w-12 h-12 mx-auto mb-6 text-sky-900" />
             <h2 className="text-4xl md:text-4xl mb-8">Meet Our Expert</h2>
           </div>
-          <div className="flex flex-col md:flex-row items-center gap-8 animate-on-scroll opacity-0">
-            <div className="md:w-1/3">
-              <img
-                src={practitioner.image}
-                alt={practitioner.name}
-                className="rounded-lg shadow-lg w-full"
-              />
-            </div>
-            <div className="md:w-2/3 space-y-4">
+          <div className="animate-on-scroll opacity-0 max-w-2xl mx-auto text-center">
+            <div className="space-y-4">
               <h3 className="text-2xl font-medium text-sky-900">{practitioner.name}</h3>
               <p className="text-xl text-sky-700">{practitioner.title}</p>
               <p className="text-gray-600">{practitioner.experience}</p>
               <div className="space-y-2">
                 <h4 className="text-lg font-medium text-sky-900">Qualifications</h4>
-                <ul className="list-disc list-inside text-gray-600">
+                <ul className="list-none space-y-2 text-gray-600">
                   {practitioner.qualifications.map((qual, index) => (
                     <li key={index}>{qual}</li>
                   ))}
