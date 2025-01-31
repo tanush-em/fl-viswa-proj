@@ -146,7 +146,7 @@ function App() {
       <header className="relative h-[80vh] md:h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="assets/hero-bg.webp"
+            src="assets/hero-bg.png"
             alt="Spa background"
             className="w-full h-full object-cover"
           />
