@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Sparkles, Gem, Phone, Mail, MapPin, Clock, Instagram, UserCircle } from 'lucide-react';
+import { Sparkles, Gem, Phone, Mail, MapPin, Clock, Instagram, UserCircle, PhoneCall } from 'lucide-react';
 
 function App() {
   useEffect(() => {
@@ -38,110 +38,109 @@ function App() {
       name: "Hydra Facial Treatment",
       description: "Advanced facial treatment that cleanses, exfoliates, and hydrates your skin using innovative technology for a radiant glow.",
       duration: "60 mins",
-      price: "₹3,500"
+      price: "₹1,450"
     },
     {
       name: "Lip Pigmentation - Lip Blush - Lip Tattooing",
       description: "Semi-permanent makeup technique to enhance lip color and shape, creating naturally beautiful and fuller-looking lips.",
-      duration: "90 mins",
-      price: "₹4,500"
+      price: "₹12,999"
     },
     {
       name: "Eyebrow Microblading",
       description: "Precise, hair-like strokes created manually to achieve natural-looking, perfectly shaped eyebrows that last.",
-      duration: "120 mins",
-      price: "₹5,000"
+      price: "₹5,999"
     },
-    // Add the rest of the treatments with duration and price...
-    // You should add duration and price for all treatments
+    {
+      name: "Korean Skin Facial",
+      description: "Multi-step facial treatment inspired by Korean beauty rituals, focusing on achieving clear, glowing skin.",
+      price: "₹1,250"
+    },
+    {
+      name: "BB Glow Treatment",
+      description: "Semi-permanent foundation treatment that evens out skin tone and provides a natural, dewy finish.",
+      price: "₹4,999"
+    },
+    {
+      name: "Eyebrow Micropigmentation",
+      description: "Advanced permanent makeup technique for defined, perfectly shaped eyebrows using state-of-the-art equipment.",
+      price: "₹5,999"
+    },
+    {
+      name: "Ombra Eyebrow Style",
+      description: "Gradient brow effect that creates a soft, powdered look, perfect for those seeking a bold yet natural appearance.",
+      price: "₹5,999"
+    },
+    {
+      name: "Face and Neck Cupping Therapy",
+      description: "Traditional therapy using suction cups to improve blood flow, reduce tension, and promote skin rejuvenation.",
+      price: "₹450"
+    },
+    {
+      name: "Wart Removal - Skin Tag Removal",
+      description: "Safe and effective removal of skin irregularities using advanced medical techniques.",
+      price: "₹150"
+    },
+    {
+      name: "Microdermabrasion",
+      description: "Non-invasive exfoliation treatment that removes dead skin cells and stimulates collagen production.",
+      price: "₹450"
+    },
+    {
+      name: "Dermaplaning",
+      description: "Physical exfoliation technique that removes dead skin cells and peach fuzz for smoother, brighter skin.",
+      price: "₹350"
+    },
+    {
+      name: "Medifacial",
+      description: "Medical-grade facial treatment combining multiple techniques for maximum skin improvement.",
+      price: "₹999"
+    },
+    {
+      name: "Chemical Peel",
+      description: "Controlled exfoliation using chemical solutions to improve skin texture, tone, and overall appearance.",
+      price: "₹1,500"
+    },
+    {
+      name: "Body Chemical Peels",
+      description: "Specialized chemical treatments for body skin concerns, targeting issues like acne, scarring, and pigmentation.",
+      price: "₹950"
+    },
+    {
+      name: "Facial Treatments for All Skin Types",
+      description: "Customized facial treatments designed to address specific skin concerns and types.",
+      price: "₹450"
+    },
+    {
+      name: "Face, Lips, Undereye Pigmentation Treatment",
+      description: "Targeted treatments to address uneven pigmentation in sensitive facial areas.",
+      price: "₹499"
+    },
+    {
+      name: "Beauty Spot Creation",
+      description: "Artistic creation of permanent beauty marks to enhance facial features and add character.",
+      price: "₹499"
+    },
+    {
+      name: "Permanent Laser Hair Removal",
+      description: "Long-lasting hair removal solution using advanced laser technology for smooth, hair-free skin.",
+      price: "₹1,499"
+    },
+    {
+      name: "IPL Photo Facial",
+      description: "Light-based treatment that addresses various skin concerns including sun damage and age spots.",
+      price: "₹999"
+    },
+    {
+      name: "Laser Tattoo Removal",
+      description: "Advanced laser technology to safely remove unwanted tattoos of all colors and sizes.",
+      price: "₹1,299"
+    },
+    {
+      name: "Laser Treatment for Skin Conditions",
+      description: "Specialized laser treatments targeting acne, stretch marks, age spots, and other skin concerns.",
+      price: "₹1,299"
+    }
   ];
-
-  // const treatments = [
-  //   {
-  //     name: "Hydra Facial Treatment",
-  //     description: "Advanced facial treatment that cleanses, exfoliates, and hydrates your skin using innovative technology for a radiant glow."
-  //   },
-  //   {
-  //     name: "Lip Pigmentation - Lip Blush - Lip Tattooing",
-  //     description: "Semi-permanent makeup technique to enhance lip color and shape, creating naturally beautiful and fuller-looking lips."
-  //   },
-  //   {
-  //     name: "Eyebrow Microblading",
-  //     description: "Precise, hair-like strokes created manually to achieve natural-looking, perfectly shaped eyebrows that last."
-  //   },
-  //   {
-  //     name: "Eyebrow Micropigmentation",
-  //     description: "Advanced permanent makeup technique for defined, perfectly shaped eyebrows using state-of-the-art equipment."
-  //   },
-  //   {
-  //     name: "Ombra Eyebrow Style",
-  //     description: "Gradient brow effect that creates a soft, powdered look, perfect for those seeking a bold yet natural appearance."
-  //   },
-  //   {
-  //     name: "Korean Skin Facial",
-  //     description: "Multi-step facial treatment inspired by Korean beauty rituals, focusing on achieving clear, glowing skin."
-  //   },
-  //   {
-  //     name: "BB Glow Treatment",
-  //     description: "Semi-permanent foundation treatment that evens out skin tone and provides a natural, dewy finish."
-  //   },
-  //   {
-  //     name: "Face and Neck Cupping Therapy",
-  //     description: "Traditional therapy using suction cups to improve blood flow, reduce tension, and promote skin rejuvenation."
-  //   },
-  //   {
-  //     name: "Wart Removal - Skin Tag Removal",
-  //     description: "Safe and effective removal of skin irregularities using advanced medical techniques."
-  //   },
-  //   {
-  //     name: "Microdermabrasion",
-  //     description: "Non-invasive exfoliation treatment that removes dead skin cells and stimulates collagen production."
-  //   },
-  //   {
-  //     name: "Dermaplaning",
-  //     description: "Physical exfoliation technique that removes dead skin cells and peach fuzz for smoother, brighter skin."
-  //   },
-  //   {
-  //     name: "Medifacial",
-  //     description: "Medical-grade facial treatment combining multiple techniques for maximum skin improvement."
-  //   },
-  //   {
-  //     name: "Chemical Peel",
-  //     description: "Controlled exfoliation using chemical solutions to improve skin texture, tone, and overall appearance."
-  //   },
-  //   {
-  //     name: "Body Chemical Peels",
-  //     description: "Specialized chemical treatments for body skin concerns, targeting issues like acne, scarring, and pigmentation."
-  //   },
-  //   {
-  //     name: "Facial Treatments for All Skin Types",
-  //     description: "Customized facial treatments designed to address specific skin concerns and types."
-  //   },
-  //   {
-  //     name: "Face, Lips, Undereye Pigmentation Treatment",
-  //     description: "Targeted treatments to address uneven pigmentation in sensitive facial areas."
-  //   },
-  //   {
-  //     name: "Beauty Spot Creation",
-  //     description: "Artistic creation of permanent beauty marks to enhance facial features and add character."
-  //   },
-  //   {
-  //     name: "Permanent Laser Hair Removal",
-  //     description: "Long-lasting hair removal solution using advanced laser technology for smooth, hair-free skin."
-  //   },
-  //   {
-  //     name: "Photo Facial",
-  //     description: "Light-based treatment that addresses various skin concerns including sun damage and age spots."
-  //   },
-  //   {
-  //     name: "Laser Tattoo Removal",
-  //     description: "Advanced laser technology to safely remove unwanted tattoos of all colors and sizes."
-  //   },
-  //   {
-  //     name: "Laser Treatment for Skin Conditions",
-  //     description: "Specialized laser treatments targeting acne, stretch marks, age spots, and other skin concerns."
-  //   }
-  // ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -184,7 +183,7 @@ function App() {
         </div>
       </section>
 
-      {/* Added Practitioner Section */}
+      {/* Practitioner Section */}
       <section className="py-20 px-4 md:px-8 bg-sky-200">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-on-scroll opacity-0">
@@ -224,29 +223,26 @@ function App() {
             {treatments.map((treatment, index) => (
               <div
                 key={index}
-                className="group relative p-6 rounded-lg bg-sky-200 hover:shadow-xl transition-all duration-200 
-                          animate-on-scroll opacity-0 transform hover:-translate-y-2 hover:scale-105
-                          cursor-pointer overflow-hidden"
+                className="group relative p-6 rounded-lg bg-sky-200 hover:shadow-xl transition-all duration-200
+                     animate-on-scroll opacity-0 transform hover:-translate-y-2 hover:scale-105
+                     cursor-pointer overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-200 to-transparent 
-                              opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-200 to-transparent
+                          opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative z-10">
-                  <h3 className="text-lg font-medium mb-2 text-sky-900 group-hover:text-black 
-                               transition-colors duration-200">
+                  <h3 className="text-lg font-medium mb-2 text-sky-900 group-hover:text-black
+                          transition-colors duration-200">
                     {treatment.name}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 
-                               transition-colors duration-200">
+                  <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700
+                          transition-colors duration-200">
                     {treatment.description}
                   </p>
 
-                  {/* Additional info that appears on hover */}
-                  <div className="mt-4 opacity-0 group-hover:opacity-100 transform 
-                                translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                    <div className="flex justify-between text-md">
-                      <span>{treatment.duration}</span>
+                  <div className="mt-4 opacity-0 group-hover:opacity-100 transform
+                           translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                    <div className="text-center text-md">
                       <span>{treatment.price}</span>
                     </div>
                   </div>
@@ -280,23 +276,23 @@ function App() {
               <p className="text-gray-600 text-center">25A, 2nd Floor, SVS Nagar, 2nd Street, Valasaravakkam, Chennai 600087</p>
             </a>
             <a
-              href="mailto:ommurugabeautyclinic@gmail.com"
+              href="https://wa.me/message/2M2RUNHV3UVDO1"
               className="group flex flex-col items-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-2"
             >
-              <Mail className="w-16 h-16 text-sky-400 group-hover:text-sky-600 transition-colors mb-4" />
-              <h3 className="text-xl font-medium text-gray-800 mb-2">Email Us</h3>
-              <p className="text-gray-600 text-center">ommurugabeautyclinic@gmail.com</p>
+              <PhoneCall className="w-16 h-16 text-sky-400 group-hover:text-sky-600 transition-colors mb-4" />
+              <h3 className="text-xl font-medium text-gray-800 mb-2">Join Whatsapp Us</h3>
+              <p className="text-gray-600 text-center">Join our Whatsapp group to know more</p>
             </a>
           </div>
 
           {/* Additional Contact Info */}
           <div className="mt-12 flex justify-center space-x-8">
             <div className="flex items-center space-x-2">
-              <Phone className="w-5 h-5 text-sky-400" />
+              <Phone className="w-5 h-5 text-sky-900" />
               <span className="text-gray-800">+91 86100 90040</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Clock className="w-5 h-5 text-sky-400" />
+              <Clock className="w-5 h-5 text-sky-900" />
               <span className="text-gray-800">Mon-Sun: 9AM-10PM</span>
             </div>
           </div>
@@ -311,7 +307,10 @@ function App() {
             <span className="text-gray-600">Om Muruga Cosmetics</span>
           </div>
           <div className="flex space-x-4">
-            <a href="https://instagram.com/OM_MURU_GA/" className="text-gray-600 hover:text-sky-600">
+            <a href="https://wa.me/message/2M2RUNHV3UVDO1" className="text-gray-600 hover:text-sky-600">
+              <PhoneCall className="w-5 h-5" />
+            </a>
+            <a href="https://www.instagram.com/om__muruga_cosmetics_pmustudio?igsh=MTAwNncxNmtlMmV6eg==" className="text-gray-600 hover:text-sky-600">
               <Instagram className="w-5 h-5" />
             </a>
             <a href="mailto:ommurugabeautyclinic@gmail.com" className="text-gray-600 hover:text-sky-600">
