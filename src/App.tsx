@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Sparkles, Gem, Phone, Mail, MapPin, Clock, Instagram, UserCircle, PhoneCall } from 'lucide-react';
+import { Sparkles, Phone, Mail, MapPin, Clock, Instagram, UserCircle, PhoneCall } from 'lucide-react';
 
 function App() {
   useEffect(() => {
@@ -24,7 +24,7 @@ function App() {
   const practitioner = {
     name: "Dr R. Kowsalya",
     title: "Permanent Makeup Artist",
-    experience: "3+ years of experience",
+    experience: "5+ years of experience",
     qualifications: [
       "BDS, PMU, FMC"
     ]
@@ -35,114 +35,113 @@ function App() {
     {
       name: "Hydra Facial Treatment",
       description: "Advanced facial treatment that cleanses, exfoliates, and hydrates your skin using innovative technology for a radiant glow.",
-      duration: "60 mins",
-      price: "₹1,450"
+      imageUrl: ""
     },
     {
       name: "Lip Pigmentation - Lip Blush - Lip Tattooing",
       description: "Semi-permanent makeup technique to enhance lip color and shape, creating naturally beautiful and fuller-looking lips.",
-      price: "₹12,999"
+      imageUrl: ""
     },
     {
       name: "Eyebrow Microblading",
       description: "Precise, hair-like strokes created manually to achieve natural-looking, perfectly shaped eyebrows that last.",
-      price: "₹5,999"
+      imageUrl: ""
     },
     {
       name: "Korean Skin Facial",
       description: "Multi-step facial treatment inspired by Korean beauty rituals, focusing on achieving clear, glowing skin.",
-      price: "₹1,250"
+      imageUrl: ""
     },
     {
       name: "BB Glow Treatment",
       description: "Semi-permanent foundation treatment that evens out skin tone and provides a natural, dewy finish.",
-      price: "₹4,999"
+      imageUrl: ""
     },
     {
       name: "Eyebrow Micropigmentation",
       description: "Advanced permanent makeup technique for defined, perfectly shaped eyebrows using state-of-the-art equipment.",
-      price: "₹5,999"
+      imageUrl: ""
     },
     {
       name: "Ombra Eyebrow Style",
       description: "Gradient brow effect that creates a soft, powdered look, perfect for those seeking a bold yet natural appearance.",
-      price: "₹5,999"
+      imageUrl: ""
     },
     {
       name: "Face and Neck Cupping Therapy",
       description: "Traditional therapy using suction cups to improve blood flow, reduce tension, and promote skin rejuvenation.",
-      price: "₹450"
+      imageUrl: ""
     },
     {
       name: "Wart Removal - Skin Tag Removal",
       description: "Safe and effective removal of skin irregularities using advanced medical techniques.",
-      price: "₹150"
+      imageUrl: ""
     },
     {
       name: "Microdermabrasion",
       description: "Non-invasive exfoliation treatment that removes dead skin cells and stimulates collagen production.",
-      price: "₹450"
+      imageUrl: ""
     },
     {
       name: "Dermaplaning",
       description: "Physical exfoliation technique that removes dead skin cells and peach fuzz for smoother, brighter skin.",
-      price: "₹350"
+      imageUrl: ""
     },
     {
       name: "Medifacial",
       description: "Medical-grade facial treatment combining multiple techniques for maximum skin improvement.",
-      price: "₹999"
+      imageUrl: ""
     },
     {
       name: "Chemical Peel",
       description: "Controlled exfoliation using chemical solutions to improve skin texture, tone, and overall appearance.",
-      price: "₹1,500"
+      imageUrl: ""
     },
     {
       name: "Body Chemical Peels",
       description: "Specialized chemical treatments for body skin concerns, targeting issues like acne, scarring, and pigmentation.",
-      price: "₹950"
+      imageUrl: ""
     },
     {
       name: "Facial Treatments for All Skin Types",
       description: "Customized facial treatments designed to address specific skin concerns and types.",
-      price: "₹450"
+      imageUrl: ""
     },
     {
       name: "Face, Lips, Undereye Pigmentation Treatment",
       description: "Targeted treatments to address uneven pigmentation in sensitive facial areas.",
-      price: "₹499"
+      imageUrl: ""
     },
     {
       name: "Beauty Spot Creation",
       description: "Artistic creation of permanent beauty marks to enhance facial features and add character.",
-      price: "₹499"
+      imageUrl: ""
     },
     {
       name: "Permanent Laser Hair Removal",
       description: "Long-lasting hair removal solution using advanced laser technology for smooth, hair-free skin.",
-      price: "₹1,499"
+      imageUrl: ""
     },
     {
       name: "IPL Photo Facial",
       description: "Light-based treatment that addresses various skin concerns including sun damage and age spots.",
-      price: "₹999"
+      imageUrl: ""
     },
     {
       name: "Laser Tattoo Removal",
       description: "Advanced laser technology to safely remove unwanted tattoos of all colors and sizes.",
-      price: "₹1,299"
+      imageUrl: ""
     },
     {
       name: "Laser Treatment for Skin Conditions",
       description: "Specialized laser treatments targeting acne, stretch marks, age spots, and other skin concerns.",
-      price: "₹1,299"
+      imageUrl: ""
     }
   ];
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - Improved mobile responsiveness */}
+      {/* Hero Section */}
       <header className="relative h-[80vh] md:h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -168,7 +167,7 @@ function App() {
         </div>
       </header>
 
-      {/* About Section - Improved spacing for mobile */}
+      {/* About Section */}
       <section className="py-12 md:py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center animate-on-scroll opacity-0">
@@ -186,7 +185,7 @@ function App() {
         </div>
       </section>
 
-      {/* Practitioner Section - Improved mobile layout */}
+      {/* Practitioner Section */}
       <section className="py-12 md:py-20 px-4 md:px-8 bg-sky-200">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-6 md:mb-8 animate-on-scroll opacity-0">
@@ -210,42 +209,47 @@ function App() {
         </div>
       </section>
 
-      {/* Services Section - Improved card layout for mobile */}
-      <section className="py-12 md:py-20 px-4 md:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl text-center mb-8 md:mb-16">Our Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {treatments.map((treatment, index) => (
-              <div
-                key={index}
-                className="group relative p-4 md:p-6 rounded-lg bg-sky-200 hover:shadow-xl transition-all duration-200
-                     animate-on-scroll opacity-0 transform hover:-translate-y-2 hover:scale-105
-                     cursor-pointer overflow-hidden"
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-200 to-transparent
-                          opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="relative z-10">
-                  <h3 className="text-lg md:text-xl font-medium mb-2 text-black group-hover:text-sky-900
-                          transition-colors duration-200">
-                    {treatment.name}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-gray-600 group-hover:text-gray-700
-                          transition-colors duration-200">
-                    {treatment.description}
-                  </p>
-                  <div className="mt-4 opacity-100 md:opacity-0 group-hover:opacity-100 transform
-                           translate-y-0 md:translate-y-2 group-hover:translate-y-0 transition-all duration-200">
-                    <div className="text-center text-base md:text-lg">
-                      <span>{treatment.price}</span>
+      {/* Services Section */}
+      <div className="max-w-6xl mx-auto p-8">
+        <h2 className="text-3xl text-center mb-16">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {treatments.map((treatment, index) => (
+            <div key={index} className="group h-96 [perspective:1000px]">
+              <div className="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+
+                <div className="absolute inset-0 [backface-visibility:hidden]">
+                  <div className="h-full w-full rounded-lg shadow-lg overflow-hidden bg-white">
+                    <img
+                      src={treatment.imageUrl}
+                      alt={treatment.name}
+                      className="w-full h-2/3 object-cover"
+                    />
+                    <div className="p-4 text-center">
+                      <h3 className="text-xl font-semibold">{treatment.name}</h3>
                     </div>
                   </div>
                 </div>
+
+                <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                  <div className="h-full w-full rounded-lg shadow-lg bg-sky-50 p-6 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-xl font-semibold mb-4">{treatment.name}</h3>
+                      <p className="text-gray-600 mb-4">{treatment.description}</p>
+                    </div>
+                    <a href="https://wa.me/message/2M2RUNHV3UVDO1">
+                      <button
+                        className="w-full bg-sky-600 hover:bg-sky-700 text-white py-2 px-4 rounded-md transition-colors duration-200"
+                      >
+                        Book Now
+                      </button>
+                    </a>
+                  </div>
+                </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
 
       {/* Contact Us Section - Improved mobile grid */}
       <section className="py-12 md:py-20 px-4 md:px-8 bg-sky-300">
