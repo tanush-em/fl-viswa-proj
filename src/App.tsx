@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import InfiniteScrollBanner from '/Users/viswa/Downloads/website/fl-viswa-proj/components/InfiniteScrollBanner.tsx';
 import { Sparkles, Phone, Mail, MapPin, Clock, Instagram, UserCircle, PhoneCall } from 'lucide-react';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
   const practitioner = {
     name: "Dr R. Kowsalya",
     title: "Permanent Makeup Artist",
-    experience: "5+ years of experience",
+    experience: "4+ years of experience",
     qualifications: [
       "BDS, PMU, FMC"
     ]
@@ -34,107 +35,87 @@ function App() {
   const treatments = [
     {
       name: "Hydra Facial Treatment",
-      description: "Advanced facial treatment that cleanses, exfoliates, and hydrates your skin using innovative technology for a radiant glow.",
+      description: "Hydration boost<br/>Reduce acne issues<br/>Smooth's out the skin",
       imageUrl: ""
     },
     {
       name: "Lip Pigmentation - Lip Blush - Lip Tattooing",
-      description: "Semi-permanent makeup technique to enhance lip color and shape, creating naturally beautiful and fuller-looking lips.",
+      description: "Enhance lip definition and fullness<br/>Enhance natural lip shape<br/>Reshaped and redefines the lip",
       imageUrl: ""
     },
     {
       name: "Eyebrow Microblading",
-      description: "Precise, hair-like strokes created manually to achieve natural-looking, perfectly shaped eyebrows that last.",
+      description: "Natural looking results<br/>Enhance appearance<br/>Your brow color will not fade or change color",
       imageUrl: ""
     },
     {
-      name: "Korean Skin Facial",
-      description: "Multi-step facial treatment inspired by Korean beauty rituals, focusing on achieving clear, glowing skin.",
+      name: "Eyebrow Microblading - Eyebrow Tattoo",
+      description: "Customizable<br/>Natural looking and long lasting results<br/>Low maintenance",
+      imageUrl: ""
+    },
+    {
+      name: "Korean Glass Skin Facial",
+      description: "Deep Hydration<br/>Safe for sensitive skin types<br/>Detoxifies and purifies the skin",
       imageUrl: ""
     },
     {
       name: "BB Glow Treatment",
-      description: "Semi-permanent foundation treatment that evens out skin tone and provides a natural, dewy finish.",
-      imageUrl: ""
-    },
-    {
-      name: "Eyebrow Micropigmentation",
-      description: "Advanced permanent makeup technique for defined, perfectly shaped eyebrows using state-of-the-art equipment.",
-      imageUrl: ""
-    },
-    {
-      name: "Ombra Eyebrow Style",
-      description: "Gradient brow effect that creates a soft, powdered look, perfect for those seeking a bold yet natural appearance.",
+      description: "Visual reduction in acne, blemishes and acne scars<br/>Improves collagen production<br/>Nourishing and hydrating the skin",
       imageUrl: ""
     },
     {
       name: "Face and Neck Cupping Therapy",
-      description: "Traditional therapy using suction cups to improve blood flow, reduce tension, and promote skin rejuvenation.",
+      description: "Relax muscle tension<br/>Tone chin, jawline, neck<br/>Increase oxygen-rich blood circulation",
       imageUrl: ""
     },
     {
-      name: "Wart Removal - Skin Tag Removal",
-      description: "Safe and effective removal of skin irregularities using advanced medical techniques.",
+      name: "Wart Removal - Skin Tag Removal Treatment",
+      description: "Painless treatment<br/>No scarring<br/>Reduce risk of spreading wart",
       imageUrl: ""
     },
     {
       name: "Microdermabrasion",
-      description: "Non-invasive exfoliation treatment that removes dead skin cells and stimulates collagen production.",
+      description: "Improves the skin texture<br/>Reduce scars<br/>Reduces pigmentation",
       imageUrl: ""
     },
     {
       name: "Dermaplaning",
-      description: "Physical exfoliation technique that removes dead skin cells and peach fuzz for smoother, brighter skin.",
+      description: "Evening skin tone<br/>Smoother skin<br/>Removing small hairs or peach fuzz",
       imageUrl: ""
     },
     {
-      name: "Medifacial",
-      description: "Medical-grade facial treatment combining multiple techniques for maximum skin improvement.",
+      name: "Facial Treatment",
+      description: "Helps to improve your skin texture<br/>Reduce acne<br/>Reduces the signs of aging",
       imageUrl: ""
     },
     {
-      name: "Chemical Peel",
-      description: "Controlled exfoliation using chemical solutions to improve skin texture, tone, and overall appearance.",
-      imageUrl: ""
-    },
-    {
-      name: "Body Chemical Peels",
-      description: "Specialized chemical treatments for body skin concerns, targeting issues like acne, scarring, and pigmentation.",
-      imageUrl: ""
-    },
-    {
-      name: "Facial Treatments for All Skin Types",
-      description: "Customized facial treatments designed to address specific skin concerns and types.",
-      imageUrl: ""
-    },
-    {
-      name: "Face, Lips, Undereye Pigmentation Treatment",
-      description: "Targeted treatments to address uneven pigmentation in sensitive facial areas.",
+      name: "Face, Lips, Under Eye Pigmentation",
+      description: "It provides a dramatic improvement in hyperpigmentation<br/>The treatment imparts the radiant glow<br/>Safe and cost-effective procedure",
       imageUrl: ""
     },
     {
       name: "Beauty Spot Creation",
-      description: "Artistic creation of permanent beauty marks to enhance facial features and add character.",
+      description: "Beauty spot creation areas<br/>Enhancement of appearance<br/>Classic touch to your appearance",
       imageUrl: ""
     },
     {
-      name: "Permanent Laser Hair Removal",
-      description: "Long-lasting hair removal solution using advanced laser technology for smooth, hair-free skin.",
+      name: "Laser Hair Removal",
+      description: "Smoother skin, reduces hair<br/>Long lasting results<br/>Non-invasive and easily tolerated procedure with no burning",
       imageUrl: ""
     },
     {
-      name: "IPL Photo Facial",
-      description: "Light-based treatment that addresses various skin concerns including sun damage and age spots.",
+      name: "Photo Facial",
+      description: "Having regular photo facials can prevent premature skin aging<br/>Best ways to treat sun-damaged skin<br/>Photo facial can treat stubborn acne",
       imageUrl: ""
     },
     {
       name: "Laser Tattoo Removal",
-      description: "Advanced laser technology to safely remove unwanted tattoos of all colors and sizes.",
+      description: "Laser can help fade and remove tattoos<br/>Laser energy breaks down melanin in the skin, which can help reduce the pigments",
       imageUrl: ""
     },
     {
-      name: "Laser Treatment for Skin Conditions",
-      description: "Specialized laser treatments targeting acne, stretch marks, age spots, and other skin concerns.",
+      name: "Laser Skin Rejuvenation and Pigmentation",
+      description: "Reduce the appearance of scars by promoting skin healing and regeneration<br/>Minimal downtime, long-lasting results",
       imageUrl: ""
     }
   ];
@@ -185,73 +166,10 @@ function App() {
         </div>
       </section>
 
-      {/* Practitioner Section */}
-      <section className="py-12 md:py-20 px-4 md:px-8 bg-sky-200">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-6 md:mb-8 animate-on-scroll opacity-0">
-            <UserCircle className="w-10 h-10 md:w-12 md:h-12 mx-auto mb-4 md:mb-6 text-sky-900" />
-            <h2 className="text-3xl md:text-4xl mb-2">Meet Our Expert</h2>
-          </div>
-          <div className="animate-on-scroll opacity-0 max-w-2xl mx-auto text-center px-4">
-            <div className="space-y-2">
-              <h3 className="text-2xl md:text-3xl font-bold text-sky-900">{practitioner.name}</h3>
-              <p className="text-lg md:text-xl text-sky-700">{practitioner.title}</p>
-              <p className="text-gray-600">{practitioner.experience}</p>
-              <div className="space-y-1">
-                <h3 className="list-none text-gray-600">
-                  {practitioner.qualifications.map((qual, index) => (
-                    <div key={index} className="text-sm md:text-base">{qual}</div>
-                  ))}
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Services Section */}
-      <div className="max-w-6xl mx-auto p-8">
-        <h2 className="text-3xl text-center mb-16">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {treatments.map((treatment, index) => (
-            <div key={index} className="group h-96 [perspective:1000px]">
-              <div className="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+      <div className='bg-red-500'><InfiniteScrollBanner /></div>
 
-                <div className="absolute inset-0 [backface-visibility:hidden]">
-                  <div className="h-full w-full rounded-lg shadow-lg overflow-hidden bg-white">
-                    <img
-                      src={treatment.imageUrl}
-                      alt={treatment.name}
-                      className="w-full h-2/3 object-cover"
-                    />
-                    <div className="p-4 text-center">
-                      <h3 className="text-xl font-semibold">{treatment.name}</h3>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
-                  <div className="h-full w-full rounded-lg shadow-lg bg-sky-50 p-6 flex flex-col justify-between">
-                    <div>
-                      <h3 className="text-xl font-semibold mb-4">{treatment.name}</h3>
-                      <p className="text-gray-600 mb-4">{treatment.description}</p>
-                    </div>
-                    <a href="https://wa.me/message/2M2RUNHV3UVDO1">
-                      <button
-                        className="w-full bg-sky-600 hover:bg-sky-700 text-white py-2 px-4 rounded-md transition-colors duration-200"
-                      >
-                        Book Now
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Contact Us Section - Improved mobile grid */}
+      {/* Contact Us Section */}
       <section className="py-12 md:py-20 px-4 md:px-8 bg-sky-300">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl text-center mb-8 md:mb-16">Contact Us</h2>
@@ -283,7 +201,7 @@ function App() {
             </a>
           </div>
 
-          {/* Additional Contact Info - Improved mobile layout */}
+          {/* Additional Contact Info */}
           <div className="mt-8 md:mt-12 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
             <div className="flex items-center space-x-2">
               <Phone className="w-5 h-5 text-sky-900" />
@@ -297,8 +215,81 @@ function App() {
         </div>
       </section>
 
-      {/* Footer - Improved mobile layout */}
-      <footer className="py-6 px-4 md:px-8 bg-white">
+      {/* Practitioner Section */}
+      <section className="py-4 md:py-12 px-4 md:px-4 bg-sky-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-2 md:mb-2 animate-on-scroll opacity-0">
+            <UserCircle className="w-10 h-10 md:w-12 md:h-12 mx-auto mb-4 md:mb-6 text-sky-900" />
+            <h2 className="text-3xl md:text-4xl mb-2">Meet Our Expert</h2>
+          </div>
+          <div className="animate-on-scroll opacity-0 max-w-2xl mx-auto text-center px-4">
+            <div className="space-y-2">
+              <h3 className="text-2xl md:text-3xl font-bold text-sky-900">{practitioner.name}</h3>
+              <p className="text-lg md:text-xl text-sky-700">{practitioner.title}</p>
+              <p className="text-gray-600">{practitioner.experience}</p>
+              <div className="space-y-">
+                <h3 className="list-none text-gray-600">
+                  {practitioner.qualifications.map((qual, index) => (
+                    <div key={index} className="text-sm md:text-base">{qual}</div>
+                  ))}
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <div className="max-w-6xl mx-auto p-8">
+        <h2 className="text-4xl font-medium text-center mb-16">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {treatments.map((treatment, index) => (
+            <div key={index} className="group h-96 [perspective:1000px]">
+              <div className="relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+
+                <div className="absolute inset-0 [backface-visibility:hidden]">
+                  <div className="h-full w-full rounded-lg shadow-lg overflow-hidden bg-white">
+                    <img
+                      src={treatment.imageUrl}
+                      alt={treatment.name}
+                      className="w-full h-2/3 object-cover"
+                    />
+                    <div className="p-4 text-center">
+                      <h3 className="text-xl font-semibold">{treatment.name}</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                  <div className="h-full w-full rounded-lg shadow-lg bg-sky-50 p-6 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-xl font-semibold mb-4">{treatment.name}</h3>
+                      <ul className="text-gray-600 mb-4 list-disc list-inside">
+                        {treatment.description.split("<br/>").map((item, index) => (
+                          <li key={index}>{item.trim()}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <a href="https://wa.me/message/2M2RUNHV3UVDO1">
+                      <button
+                        className="w-full bg-sky-600 hover:bg-sky-700 text-white py-2 px-4 rounded-md transition-colors duration-200"
+                      >
+                        Book Now
+                      </button>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <InfiniteScrollBanner />
+
+      {/* Footer */}
+      <footer className="py-6 px-4 md:px-8 bg-sky-500">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center">
             <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-sky-400 mr-2" />
