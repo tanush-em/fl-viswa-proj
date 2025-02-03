@@ -25,9 +25,6 @@ const InfiniteScrollBanner = () => {
           ))}
         </div>
       </motion.div>
-      <div className="text-3xl font-medium flex justify-center items-center">
-        <h2>ON ALL TREATMENTS</h2>
-      </div>
     </div>
   );
 };
