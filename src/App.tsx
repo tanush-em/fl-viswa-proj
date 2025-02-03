@@ -36,82 +36,82 @@ function App() {
     {
       name: "Hydra Facial Treatment",
       description: "Hydration boost<br/>Reduce acne issues<br/>Smooth's out the skin",
-      imageUrl: "assets/hydrafacial.jpeg"
+      imageUrl: "/hydrafacial.jpeg"
     },
     {
       name: "Lip Pigmentation - Lip Blush - Lip Tattooing",
       description: "Enhance lip definition and fullness<br/>Enhance natural lip shape<br/>Reshaped and redefines the lip",
-      imageUrl: "assets/lip pegmentation.jpeg"
+      imageUrl: "/lip pegmentation.jpeg"
     },
     {
       name: "Eyebrow Microblading",
       description: "Natural looking results<br/>Enhance appearance<br/>Your brow color will not fade or change color",
-      imageUrl: "assets/eyebrowmicrobalding.jpeg"
+      imageUrl: "/eyebrowmicrobalding.jpeg"
     },
     {
       name: "Eyebrow Microblading - Eyebrow Tattoo",
       description: "Customizable<br/>Natural looking and long lasting results<br/>Low maintenance",
-      imageUrl: "assets/eyebrowpigmentation.jpeg"
+      imageUrl: "/eyebrowpigmentation.jpeg"
     },
     {
       name: "Korean Glass Skin Facial",
       description: "Deep Hydration<br/>Safe for sensitive skin types<br/>Detoxifies and purifies the skin",
-      imageUrl: "assets/koreanfacialtreatment.jpeg"
+      imageUrl: "/koreanfacialtreatment.jpeg"
     },
     {
       name: "BB Glow Treatment",
       description: "Visual reduction in acne, blemishes and acne scars<br/>Improves collagen production<br/>Nourishing and hydrating the skin",
-      imageUrl: "assets/bbglowtreatment.jpeg"
+      imageUrl: "/bbglowtreatment.jpeg"
     },
     {
       name: "Face and Neck Cupping Therapy",
       description: "Relax muscle tension<br/>Tone chin, jawline, neck<br/>Increase oxygen-rich blood circulation",
-      imageUrl: "assets/faceandneckcupping.jpeg"
+      imageUrl: "/faceandneckcupping.jpeg"
     },
     {
       name: "Wart Removal - Skin Tag Removal Treatment",
       description: "Painless treatment<br/>No scarring<br/>Reduce risk of spreading wart",
-      imageUrl: "assets/wartremoval.jpeg"
+      imageUrl: "/wartremoval.jpeg"
     },
     {
       name: "Microdermabrasion",
       description: "Improves the skin texture<br/>Reduce scars<br/>Reduces pigmentation",
-      imageUrl: "assets/icrodermabrasion.jpeg"
+      imageUrl: "/icrodermabrasion.jpeg"
     },
     {
       name: "Facial Treatment",
       description: "Helps to improve your skin texture<br/>Reduce acne<br/>Reduces the signs of aging",
-      imageUrl: "assets/facialtreatment.jpeg"
+      imageUrl: "/facialtreatment.jpeg"
     },
     {
       name: "Face, Lips, Under Eye Pigmentation",
       description: "It provides a dramatic improvement in hyperpigmentation<br/>The treatment imparts the radiant glow<br/>Safe and cost-effective procedure",
-      imageUrl: "assets/facelipundereeypigmentation.jpeg"
+      imageUrl: "/facelipundereeypigmentation.jpeg"
     },
     {
       name: "Beauty Spot Creation",
       description: "Beauty spot creation areas<br/>Enhancement of appearance<br/>Classic touch to your appearance",
-      imageUrl: "assets/beautyspotcreation.jpeg"
+      imageUrl: "/beautyspotcreation.jpeg"
     },
     {
       name: "Laser Hair Removal",
       description: "Smoother skin, reduces hair<br/>Long lasting results<br/>Non-invasive and easily tolerated procedure with no burning",
-      imageUrl: "assets/laserhairremoval.jpeg"
+      imageUrl: "/laserhairremoval.jpeg"
     },
     {
       name: "Photo Facial",
       description: "Having regular photo facials can prevent premature skin aging<br/>Best ways to treat sun-damaged skin<br/>Photo facial can treat stubborn acne",
-      imageUrl: "assets/photofacial.jpeg"
+      imageUrl: "/photofacial.jpeg"
     },
     {
       name: "Laser Tattoo Removal",
       description: "Laser can help fade and remove tattoos<br/>Laser energy breaks down melanin in the skin, which can help reduce the pigments",
-      imageUrl: "assets/lasertatooremoval.jpeg"
+      imageUrl: "/lasertatooremoval.jpeg"
     },
     {
       name: "Laser Skin Rejuvenation and Pigmentation",
       description: "Reduce the appearance of scars by promoting skin healing and regeneration<br/>Minimal downtime, long-lasting results",
-      imageUrl: "assets/skinrejuvention.jpeg"
+      imageUrl: "/skinrejuvention.jpeg"
     }
   ];
 
