@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import InfiniteScrollBanner from '/Users/viswa/Downloads/website/fl-viswa-proj/components/InfiniteScrollBanner.tsx';
+import InfiniteScrollBanner from '../components/InfiniteScrollBanner';
 import { Sparkles, Phone, Mail, MapPin, Clock, Instagram, UserCircle, PhoneCall } from 'lucide-react';
 
 function App() {
@@ -155,7 +155,7 @@ function App() {
             <div className="flex justify-center mb-4 md:mb-6">
               <Sparkles className="w-16 md:w-24 h-16 md:h-24 animate-pulse" />
             </div>
-            <h2 className="text-3xl md:text-4xl mb-6 md:mb-8 leading-tight">
+            <h2 className="text-3xl font-medium md:text-4xl mb-6 md:mb-8 leading-tight">
               WELCOME TO OM MURUGA COSMETICS AND LASER TREATMENT
             </h2>
             <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
@@ -167,12 +167,14 @@ function App() {
       </section>
 
 
-      <div className='bg-red-500'><InfiniteScrollBanner /></div>
+      <div className='bg-red-500'>
+        <InfiniteScrollBanner />
+      </div>
 
       {/* Contact Us Section */}
       <section className="py-12 md:py-20 px-4 md:px-8 bg-sky-300">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl text-center mb-8 md:mb-16">Contact Us</h2>
+          <h2 className="text-3xl font-bold md:text-4xl text-center mb-8 md:mb-16">Contact Us</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <a
@@ -216,19 +218,19 @@ function App() {
       </section>
 
       {/* Practitioner Section */}
-      <section className="py-4 md:py-12 px-4 md:px-4 bg-sky-200">
+      <section className="py-4 md:py-12 px-4 md:px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-2 md:mb-2 animate-on-scroll opacity-0">
-            <UserCircle className="w-10 h-10 md:w-12 md:h-12 mx-auto mb-4 md:mb-6 text-sky-900" />
-            <h2 className="text-3xl md:text-4xl mb-2">Meet Our Expert</h2>
+            <UserCircle className="w-12 h-12 md:w-12 md:h-12 mx-auto mb-2 md:mb-2 text-sky-900" />
+            <h2 className="text-3xl font-bold md:text-4xl mb-2">Meet Our Expert</h2>
           </div>
           <div className="animate-on-scroll opacity-0 max-w-2xl mx-auto text-center px-4">
             <div className="space-y-2">
               <h3 className="text-2xl md:text-3xl font-bold text-sky-900">{practitioner.name}</h3>
-              <p className="text-lg md:text-xl text-sky-700">{practitioner.title}</p>
-              <p className="text-gray-600">{practitioner.experience}</p>
+              <p className="text-xl md:text-xl text-sky-700">{practitioner.title}</p>
+              <p className="text-black text-lg">{practitioner.experience}</p>
               <div className="space-y-">
-                <h3 className="list-none text-gray-600">
+                <h3 className="list-none lext-lg text-gray-600">
                   {practitioner.qualifications.map((qual, index) => (
                     <div key={index} className="text-sm md:text-base">{qual}</div>
                   ))}
@@ -239,9 +241,13 @@ function App() {
         </div>
       </section>
 
+      <div className='bg-red-500'>
+        <InfiniteScrollBanner />
+      </div>
+
       {/* Services Section */}
       <div className="max-w-6xl mx-auto p-8">
-        <h2 className="text-4xl font-medium text-center mb-16">Our Services</h2>
+        <h2 className="text-4xl font-bold text-center mb-16">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {treatments.map((treatment, index) => (
             <div key={index} className="group h-96 [perspective:1000px]">
@@ -286,27 +292,29 @@ function App() {
         </div>
       </div>
 
-      <InfiniteScrollBanner />
+      <div className='bg-red-500'>
+        <InfiniteScrollBanner />
+      </div>
 
       {/* Footer */}
       <footer className="py-6 px-4 md:px-8 bg-sky-500">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center">
-            <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-sky-400 mr-2" />
-            <span className="text-sm md:text-base text-gray-600">Om Muruga Cosmetics</span>
+            <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-black mr-2" />
+            <span className="text-sm font-bold md:text-base text-gray-600">Om Muruga Cosmetics</span>
           </div>
-          <div className="flex space-x-6 md:space-x-4">
+          <div className="flex space-x-6 md:space-x-4 text-black">
             <a href="https://wa.me/message/2M2RUNHV3UVDO1" className="text-gray-600 hover:text-sky-600">
-              <PhoneCall className="w-5 h-5" />
+              <PhoneCall className="w-6 h-6" />
             </a>
             <a href="https://www.instagram.com/om__muruga_cosmetics_pmustudio?igsh=MTAwNncxNmtlMmV6eg==" className="text-gray-600 hover:text-sky-600">
-              <Instagram className="w-5 h-5" />
+              <Instagram className="w-6 h-6" />
             </a>
             <a href="mailto:ommurugabeautyclinic@gmail.com" className="text-gray-600 hover:text-sky-600">
-              <Mail className="w-5 h-5" />
+              <Mail className="w-6 h-6" />
             </a>
             <a href="https://g.co/kgs/DT8jP9i" className="text-gray-600 hover:text-sky-400">
-              <MapPin className="w-5 h-5" />
+              <MapPin className="w-6 h-6" />
             </a>
           </div>
         </div>
