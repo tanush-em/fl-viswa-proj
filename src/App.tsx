@@ -135,7 +135,7 @@ function App() {
           <p className="text-lg sm:text-xl md:text-2xl font-light mb-6 md:mb-8">
             Discover your natural beauty
           </p>
-          <a href="mailto:ommurugabeautyclinic@gmail.com">
+          <a href="https://wa.me/message/2M2RUNHV3UVDO1">
             <button className="bg-blue-700 hover:bg-sky-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-full backdrop-blur-sm transition-all text-sm md:text-base">
               Book Now
             </button>
@@ -151,11 +151,11 @@ function App() {
               <Sparkles className="w-16 md:w-24 h-16 md:h-24 animate-pulse" />
             </div>
             <h2 className="text-3xl font-medium md:text-4xl mb-6 md:mb-8 leading-tight">
-              WELCOME TO OM MURUGA COSMETICS AND LASER TREATMENT
+              WELCOME TO OM MURUGA COSMETICS PERMANENT MAKEUP STUDIO
             </h2>
             <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-              Experience the perfect blend of traditional techniques and modern technology.
-              Our expertise dedicated to helping you achieve your beauty and wellness goals.
+              Premium permanent makeup studio .
+              We offer professional skincare treatment which provides optimal results.
             </p>
           </div>
         </div>
@@ -178,7 +178,7 @@ function App() {
             >
               <Instagram className="w-12 h-12 md:w-16 md:h-16 text-sky-400 group-hover:text-sky-600 transition-colors mb-4" />
               <h3 className="text-lg md:text-xl font-medium text-gray-800 mb-2">Follow Us</h3>
-              <p className="text-sm md:text-base text-gray-600 text-center">Stay updated with our latest treatments and offers</p>
+              <p className="text-sm md:text-base text-gray-600 text-center">Stay Updated With Our Latest Treatments And Offers</p>
             </a>
             <a
               href="https://g.co/kgs/DT8jP9i"
@@ -186,15 +186,15 @@ function App() {
             >
               <MapPin className="w-12 h-12 md:w-16 md:h-16 text-sky-400 group-hover:text-sky-600 transition-colors mb-4" />
               <h3 className="text-lg md:text-xl font-medium text-gray-800 mb-2">Visit Us</h3>
-              <p className="text-sm md:text-base text-gray-600 text-center">25A, 2nd Floor, SVS Nagar, 2nd Street, Valasaravakkam, Chennai 600087</p>
+              <p className="text-sm md:text-base text-gray-600 text-center">25A, 2nd Floor, SVS Nagar, 2nd Street, Valasaravakkam, Chennai 600087( NEAR HOLY CROSS SCHOOL )</p>
             </a>
             <a
               href="https://wa.me/message/2M2RUNHV3UVDO1"
               className="group flex flex-col items-center p-6 md:p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-2"
             >
               <PhoneCall className="w-12 h-12 md:w-16 md:h-16 text-sky-400 group-hover:text-sky-600 transition-colors mb-4" />
-              <h3 className="text-lg md:text-xl font-medium text-gray-800 mb-2">Join Whatsapp Us</h3>
-              <p className="text-sm md:text-base text-gray-600 text-center">Join our Whatsapp group to know more</p>
+              <h3 className="text-lg md:text-xl font-medium text-gray-800 mb-2">JOIN US ON WHATSAPP</h3>
+              <p className="text-sm md:text-base text-gray-600 text-center">Book Apppintment On WhatsApp</p>
             </a>
           </div>
 
@@ -206,7 +206,7 @@ function App() {
             </div>
             <div className="flex items-center space-x-2">
               <Clock className="w-5 h-5 text-sky-900" />
-              <span className="text-sm md:text-base text-gray-800">Mon-Sun: 9AM-10PM</span>
+              <span className="text-sm md:text-base text-gray-800">Mon-Sun: 11AM-9PM</span>
             </div>
           </div>
         </div>
