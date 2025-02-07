@@ -49,7 +49,7 @@ function App() {
       imageUrl: "/eyebrowmicrobalding.jpeg"
     },
     {
-      name: "Eyebrow Microblading - Eyebrow Tattoo",
+      name: "Eyebrow Micropigmentation",
       description: "Customizable<br/>Natural looking and long lasting results<br/>Low maintenance",
       imageUrl: "/eyebrowpigmentation.jpeg"
     },
@@ -130,7 +130,7 @@ function App() {
 
         <div className="relative text-center text-white px-4 max-w-[90%] md:max-w-none">
           <h1 className="text-2xl sm:text-3xl md:text-7xl mb-4 md:mb-6 font-medium leading-tight">
-            OM MURUGA COSMETICS & MAKEUP STUDIO
+            OM MURUGA COSMETICS PERMANENT MAKEUP STUDIO
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl font-light mb-6 md:mb-8">
             Discover your natural beauty
@@ -296,7 +296,7 @@ function App() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center">
             <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-black mr-2" />
-            <span className="text-sm font-bold md:text-base text-gray-600">Om Muruga Cosmetics</span>
+            <span className="text-sm font-bold md:text-base text-gray-600">Om Muruga Cosmetics Permanent Makeup Studio</span>
           </div>
           <div className="flex space-x-6 md:space-x-4 text-black">
             <a href="https://wa.me/message/2M2RUNHV3UVDO1" className="text-gray-600 hover:text-sky-600">
